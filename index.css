@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
     background-color: #1d2025;
 }
 
@@ -14,6 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #1d2025;
+    position: relative;
     padding: 25px 20px ;
     
 }
@@ -22,16 +25,16 @@ body {
     width: 100px;
 }
 
-.nav-links {
+#navlinks {
     list-style: none;
     display: flex;
 }
 
-.nav-links li {
+#navlinks li {
     margin-left: 20px;
 }
 
-.nav-links a {
+#navlinks a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -49,41 +52,6 @@ body {
     
 }
 
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 786px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: white;
-    }
-
-    .nav-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .burger {
-        display: block;
-    }
-}
-
 .nav-active {
     display: flex;
 }
@@ -92,8 +60,8 @@ body {
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 50px;
-    min-width: 500px;
+    font-size: 40px;
+    min-width: 200px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -101,4 +69,34 @@ body {
 }
 .fingertips{
     color: aquamarine;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: white;
+    font-size: 30px;
+    
+}
+@media (max-width:600px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1d2025;
+        gap:0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+#navlinks{
+    transition: all 0.5s;
+}
 }
