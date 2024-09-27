@@ -174,3 +174,14 @@ html, body {
     color: white;
     text-align: center;
 }
+@media (max-width:640px){
+    .services-container{
+        
+        width: 100vw;
+        flex-direction:column; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
