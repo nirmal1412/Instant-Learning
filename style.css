@@ -174,7 +174,7 @@ html, body {
     color: white;
     text-align: center;
 }
-@media (max-width:640px){
+@media (max-width:600px){
     .services-container{
         
         width: 100vw;
