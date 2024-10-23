@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instant Learning</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -39,7 +39,6 @@
         <div class="container">
             <h2>About Us</h2>
             <p>Instant Learning is a platform dedicated to providing quick and easy access to educational resources. Our goal is to make learning accessible to everyone, anywhere, anytime.</p>
-            <p>We offer a wide range of topics and curated content to ensure that you have the best resources to learn and grow.</p>
         </div>
     </section>
 
@@ -84,6 +83,24 @@
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
                 <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">Login</button>
             </form>
         </div>
     </section>
