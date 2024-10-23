@@ -174,14 +174,45 @@ html, body {
     color: white;
     text-align: center;
 }
-@media (max-width:650px){
-    .services-container{
-        
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    .navbar {
+        padding: 15px 10px;
+    }
+
+    #navlinks {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #navlinks li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .front_page h2 {
+        font-size: 35px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .services-container {
         width: 100vw;
-        flex-direction:column; 
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
-
 }
